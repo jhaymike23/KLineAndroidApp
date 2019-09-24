@@ -1,0 +1,69 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-item lines="none" class="item-padding">
+        <ion-avatar  slot="start">
+            <img src="/assets/qr.jpg" alt=""/>
+        </ion-avatar>
+        <p>Scan QR Course Code</p>
+      </ion-item>    
+    </ion-title>
+  </ion-toolbar>
+</ion-header>-->
+<br>
+<ion-content>   
+  <ion-card class="sched-card" *ngIf="scannedMatch && scannedCode" >
+    <ion-card-header>
+      <ion-label>
+        <h2>Your Course Schedule</h2>
+      </ion-label>
+    </ion-card-header>
+   
+      <ion-list *ngIf="schedDetail">
+        <div *ngFor="let detail of schedDetail">  
+          <ion-item lines="none">
+            <ion-label>
+              <p>Date: </p><span> <p>{{detail.sched_date}}</p> </span>
+              <p>Time:</p> <span> <p>{{detail.sched_time}}</p> </span>
+              <p>Information:</p> <span> <p>{{detail.sched_info}}</p> </span>
+            </ion-label>
+          </ion-item>
+        
+          <br>
+
+          <ion-item lines="none">
+            <ion-label>
+              <p>Instructor:</p><span><p>{{detail.sched_instructor}}</p></span>
+            </ion-label>
+          </ion-item>       
+          
+          <ion-item lines="none">          
+            <ion-avatar slot="start">
+                <img src="/assets/image.jpeg" alt=""/>
+            </ion-avatar>
+            <ion-label>
+                <p></p>
+              </ion-label>
+          </ion-item>
+        </div>
+      </ion-list>
+    
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="!scannedMatch">
+    <ion-card-header>
+      <img src="/assets/scanQR.png" alt="" class="scan-default-img">          
+    </ion-card-header>
+
+    <ion-card-content>
+      <br>
+      <ion-label class="scan-paragraph">
+        <p>Scan your QR Code Schedule for your attendance  and for you to have an access on digitally downloadable training manuals.</p>
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block"size="default" class="btn-color" (click)="scanCode()"><ion-icon slot="start" name="qr-scanner"></ion-icon>Scan</ion-button>  
+</ion-content>

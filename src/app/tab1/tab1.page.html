@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-item lines="none" class="item-padding">
+        <ion-avatar  slot="start">
+            <img src="/assets/image.jpeg" alt=""/>
+        </ion-avatar>
+        <p style="font-weight: bold;">{{loggedUser.mem_name}}</p>
+        <ion-icon button slot="end" name="ios-create" color="danger" (click)="goToUpdatePage()"></ion-icon>
+      </ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<br>
+<ion-content> 
+    <ion-card class="card-style">
+      <ion-card-content>
+        <h2>Your Profile</h2><br>
+        <h3>Rank: </h3>
+        <p class="info-font">{{loggedUser.mem_rank}}</p>
+        <br>
+        <h3>Course: </h3>
+        <p class="info-font">{{loggedUser.mem_course}}</p>
+        <br>
+        <h3>Mobile Number: </h3>
+        <p class="info-font">{{loggedUser.mem_mobnumber}}</p>
+        <br>
+        <h3>Birthdate: </h3>
+        <p class="info-font">{{loggedUser.mem_birthday}}</p>
+        <br>
+        <h3>Civil Status: </h3>
+        <p class="info-font">{{loggedUser.mem_civilstatus}}</p>
+        <br>
+        <h3>Company: </h3>
+        <p class="info-font">{{loggedUser.mem_company}}</p>
+        <br>
+        <h3>Address: </h3>
+        <p class="info-font">{{loggedUser.mem_address}}</p>
+        <br><br>
+        <ion-item lines="none" class="item-padding">
+          <ion-avatar slot="start" class="avatar-size">
+            <img src="/assets/green.png" alt=""/>
+          </ion-avatar>  
+          <p>Your status</p>        
+        </ion-item>        
+      </ion-card-content>
+    </ion-card>
+  
+</ion-content>

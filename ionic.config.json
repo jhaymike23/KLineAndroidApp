@@ -1,0 +1,8 @@
+{
+  "name": "Kline",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+
+}

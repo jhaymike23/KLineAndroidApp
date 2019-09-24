@@ -1,0 +1,43 @@
+.larger-icon{
+    font-size: 30px!important;
+    color: #850606!important;
+}
+.larger-down-icon{
+    color: #850606!important;
+}
+ion-avatar img{   
+    border: 3px solid #850606 !important;
+}
+.item-padding{
+    --padding-start: 0px!important;
+}
+
+.category-block {
+    margin-bottom: 4px;
+}
+ 
+.category-banner {
+    border-left: 8px solid var(--ion-color-secondary);
+    background: var(--ion-color-light);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.ion-no-padding {
+    --padding-end: 0px;
+    --inner-padding-end: 0px;
+  }
+
+.dl-pdf-btn{
+    --background: linear-gradient( 109.6deg,  rgba(107,5,5,0.88) 23.6%, rgba(251,71,71,1) 85.2% );
+}
+
+.see-more{
+    text-align: center!important;
+}
+
+.card-style{
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+  }

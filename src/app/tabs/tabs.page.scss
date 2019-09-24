@@ -1,0 +1,23 @@
+.bg-color{
+    background-color: #F2F1F1;
+}
+.header-color{
+   --background: linear-gradient( 109.6deg,  rgba(107,5,5,0.88) 23.6%, rgba(251,71,71,1) 85.2% );
+   color: #ffffff;
+}
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    color: #850606 !important;
+}
+.activated {
+    color: #850606 !important;
+ }
+ .tabs-md[tabsHighlight="true"] .tab-highlight {
+    background-color: #850606 !important;
+}
+.thumbnail-style{
+    margin-top: -10px!important;
+    margin-bottom: 0px!important;
+    margin-left: 0px;
+    width: 90px;
+    height: 70px;
+}
