@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar class="header-color">
+    <ion-thumbnail slot="start" class="thumbnail-style">
+      <ion-img src="/assets/arrow.png"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+        <h2 style="margin-left: 15px;">Profile</h2>
+    </ion-label>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+        <p button slot="start" class="p-color" (click)="cancel()">Cancel</p>
+        <p button slot="end" class="p-color">Save</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-card class="card-style">
+      <ion-card-content>
+        <h2><ion-icon name="ios-create" color="danger"></ion-icon> &nbsp;Your Profile</h2><br>
+        <h3>Rank: </h3>
+        <p class="info-font">{{loggedUser.mem_rank}}</p>
+        <br>
+        <h3>Course: </h3>
+        <p class="info-font">{{loggedUser.mem_course}}</p>
+        <br>        
+        <h3>Birthdate: </h3>
+        <p class="info-font">{{loggedUser.mem_birthday}}</p>
+        <br>
+        <h3>Civil Status: </h3>
+        <p class="info-font">{{loggedUser.mem_civilstatus}}</p>
+        <br>
+        <h3>Company: </h3>
+        <p class="info-font">{{loggedUser.mem_company}}</p>
+        <br>
+        <h3>Mobile Number: </h3>
+        <ion-input type="number" value={{loggedUser.mem_mobnumber}} class="info-font"><ion-icon name="create" color="danger"></ion-icon></ion-input>
+        <br>
+        <h3>Address: </h3>
+        <ion-textarea value={{loggedUser.mem_address}} class="info-font"><ion-icon name="create" color="danger"></ion-icon></ion-textarea>
+        <br>    
+      </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-content class="bg">
+   <ion-card class="card-layout">
+    <ion-card-content>      
+      <ion-item lines="none" class="item-radius">
+          <ion-label position="floating" class="login-label">Username</ion-label>
+          <ion-input type="text" autofocus="on" [(ngModel)]="logindata.username" ></ion-input>
+        </ion-item>
+        <br>
+        <ion-item lines="none" class="item-radius">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input [type]="openEye ? 'password' : 'text'" [(ngModel)]="logindata.password" ></ion-input>
+          <ion-icon (click)="isEyeOpen()" [name]="openEye ? 'eye-off' : 'eye'" slot="end"  class="ion-align-self-center" color="danger"></ion-icon>
+        </ion-item>
+        <br>
+        <ion-button expand="block" (click)="loginData()" class="login-btn">Login</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>

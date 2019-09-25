@@ -1,0 +1,40 @@
+<ion-header> 
+  <ion-toolbar class="header-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <p>History</p>
+  </ion-toolbar>
+  <ion-searchbar mode="md" autocomplete="on" placeholder="Search by course" (ionInput)="getItems($event)"></ion-searchbar>
+</ion-header>
+
+<ion-content>  
+
+  <!--<ion-list>
+    <ion-item lines="none">
+      <ion-label color="danger">
+        <h2>Your Training History</h2>
+      </ion-label>
+    </ion-item>    
+  </ion-list>
+  <ion-list>
+    <div *ngFor="let data of dataHistory">
+      <ion-item>
+          <ion-label>
+            <p>Course Attended:</p>
+            <p style="font-weight: bold">{{data.history_course}}</p>
+            <br>
+            <h4>Date Attended:</h4>
+            <h5>{{data.history_date}}</h5>
+          </ion-label>
+        </ion-item>
+    </div> 
+  </ion-list>-->
+  <div>
+        <ion-list>
+          <ion-item *ngFor="let item of dataHistory">
+            <p>{{ item.history_course }}</p>
+          </ion-item>
+        </ion-list>
+      </div>
+</ion-content>

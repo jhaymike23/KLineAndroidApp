@@ -1,0 +1,27 @@
+.login-btn{
+    --background: linear-gradient( 109.6deg,  rgba(107,5,5,0.88) 23.6%, rgba(251,71,71,1) 85.2% );
+}
+.kline-logo{
+    text-align: center!important;
+    padding-top: 10%!important;
+}
+.card-layout{
+    margin-top: 80%!important;
+    padding-top: 1%;
+    background: rgba(0,0,0,0.1);
+    position: relative;
+}
+.eye-pos{
+    text-align: center!important;
+}
+
+.bg{
+    --background: url('../../assets/login.jpg') 0 0/100% 100% no-repeat ;
+    position: fixed;
+  }
+
+.item-radius{
+    height: 50px;
+    font-size: 15px;
+    border-radius: 30px!important;
+}
